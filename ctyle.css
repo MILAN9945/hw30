@@ -1,0 +1,39 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    animation-name: box-mou;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes box-mou {
+    0% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translate(0, 300px);
+        background-color: blue;
+    }
+
+    50% {
+        transform: translate(300px, 300px);
+        background-color: cyan;
+    }
+
+    75% {
+        transform: translate(300px,-5px);
+        background-color: deeppink;
+    }
+    100%{
+        transform: translate(-5px,0);
+        background-color: indigo;
+    }
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+   
+}
